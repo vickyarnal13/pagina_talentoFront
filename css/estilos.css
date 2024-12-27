@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prociono&display=swap');
+
+:root{
+    --familia-fuente-titulos: "Open Sans", sans-serif;
+}
+
+body{
+    font-family: var(--familia-fuente-titulos);
+    background-color: beige;
+}
+
+header {
+    margin:0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que quede sobre otros elementos */
+}
+
+.navbar {
+    background-color: #ff6600; /* Color del fondo para visibilidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega un efecto de sombra opcional */
+}
+
+a {
+    color: inherit; /* Esto asegura que el enlace herede el color del texto del contenedor (en este caso, el color de la tarjeta) */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+a:hover, a:focus {
+    color: inherit; /* Asegura que el enlace no cambie de color al pasar el ratón o al enfocarse */
+    text-decoration: none; /* Elimina el subrayado al pasar el ratón */
+}
+
+/*botones*/
+
+.btn-primary{
+  background-color: brown;  
+  border-color: beige;
+}
+
+.btn-primary:hover {
+    background-color: yellow;
+}
+
+/*creamos una clase con el color que queremos para el navegador del header*/
+.bg-orange{
+    background-color: orange;
+}
+
+.principalIndex {
+    background-image: url("../assets/imgs/imagen\ de\ fondo.jpeg"); /* Imagen de fondo */
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; /* Para la superposición de texto */
+}
+
+.principalIndex .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+    z-index: 0; /* Coloca detrás del contenido */
+}
+
+.contenedorTextoPrincipalIndex {
+    z-index: 1; /* Coloca el texto delante del fondo */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.contenedorTextoPrincipalIndex h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contenedorTextoPrincipalIndex p {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .contenedorTextoPrincipalIndex {
+        width: 80%;
+    }
+    .contenedorTextoPrincipalIndex h1 {
+        font-size: 2rem;
+    }
+    .contenedorTextoPrincipalIndex p {
+        font-size: 1rem;
+    }
+}
+.card-title {
+    font-weight: bold;    /* de esta forma los titulos de los cursos aparecen en negrita */
+}
+
+/* Reducir el alto del footer */
+.footer {
+    padding: 0.5rem 1rem; /* Menos espacio interno */
+    font-size: 0.875rem; /* Tamaño de texto reducido */
+    line-height: 1.2; /* Espaciado entre líneas reducido */
+}
+
+/* Aumentar separación entre el body y el footer */
+main {
+    margin-bottom: 3rem; /* Ajusta el margen inferior del contenido */
+}
+
+/* Opcional: Alinear elementos para ocupar menos espacio */
+.footer .row > div {
+    margin-bottom: 0.5rem; /* Espaciado interno reducido entre columnas */
+}
+
+/* Estilo general para el layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    margin: 0;
+    padding:0;
+}
+
+main {
+    flex: 1; /* Hace que el contenido crezca para ocupar el espacio disponible */
+    margin-top: 2rem; /* Espaciado entre el header y el contenido */
+    margin-bottom: 2rem; /* Espaciado entre el contenido y el footer */
+}
+
+.footer {
+    padding: 0.5rem 1rem; /* Ajustar el padding para reducir el tamaño del footer */
+    font-size: 0.875rem; /* Tamaño de texto más pequeño */
+    line-height: 1.2; /* Reducir espaciado entre líneas */
+}
+

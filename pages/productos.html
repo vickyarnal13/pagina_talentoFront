@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carito - Cursos de Café</title>
+    <!-- favicon icono-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- aca pegamos el kit de iconos-->
+   <script src="https://kit.fontawesome.com/bd2114f8ce.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/imgs/logo cafe.png" alt="logo" width="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+    </header>
+    <main>
+        <section id="productos" class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-4">Nuestros Cursos</h1>
+                <div class="row g-4">
+                    <!-- Producto 1 -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="../assets/imgs/carousel1.jpeg" class="img-fluid rounded-start" alt="Barista Inicial">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-between">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barista Inicial</h5>
+                                        <p class="card-text">Descubre el fascinante mundo del café desde cero. Aprende sobre la historia, tipos de granos y técnicas básicas de preparación. Ideal para principiantes.</p>
+                                        <p class="card-text"><strong>Precio: $100 USD</strong></p>
+                                    </div>
+                                    <div class="text-end p-3">
+                                        <button class="btn btn-sm btn-outline-primary btn-agregar"data-nombre="Curso Barista Inicial" data-precio="100">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="../assets/imgs/carousel2.jpeg" class="img-fluid rounded-start" alt="Barista Avanzado">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-between">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barista Avanzado</h5>
+                                        <p class="card-text">Lleva tus habilidades al siguiente nivel. Aprende a dominar el arte del latte, la calibración de molinos y la extracción precisa para espresso perfecto.</p>
+                                        <p class="card-text"><strong>Precio: $130 USD</strong></p>
+                                    </div>
+                                    <div class="text-end p-3">
+                                        <button class="btn btn-sm btn-outline-primary btn-agregar"data-nombre="Curso Barista Avanzado" data-precio="130">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="../assets/imgs/carousel3.jpeg" class="img-fluid rounded-start" alt="Filtrados">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-between">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Filtrados</h5>
+                                        <p class="card-text">Explora métodos de filtrado como V60, Chemex y Aeropress. Descubre cómo lograr una taza equilibrada y resaltar las notas únicas de cada grano.</p>
+                                        <p class="card-text"><strong>Precio: $70 USD</strong></p>
+                                    </div>
+                                    <div class="text-end p-3">
+                                        <button class="btn btn-sm btn-outline-primary btn-agregar" data-nombre="Curso Filtrados" data-precio="70">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+          <div class="row text-center text-md-start">
+              <!-- Columna 1: Logo -->
+              <div class="col-md-3 mb-3">
+                  <a href="#"> 
+                      <img src="../assets/imgs/logo cafe.png" alt="Logo de Carito con granos de café" class="img-fluid mb-3" style="max-width: 150px;">
+                  </a>
+              </div>
+              <!-- Columna 2: Navegación -->
+              <div class="col-md-3 mb-3">
+                  <h5>Contenidos</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                      <li><a href="../pages/contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                      <li><a href="../pages/carrito.html" class="text-white text-decoration-none">Carrito</a></li>
+                      <li><a href="../pages/productos.html" class="text-white text-decoration-none">Servicios</a></li>
+                  </ul>
+              </div>
+              <!-- Columna 3: Información de Contacto -->
+              <div class="col-md-3 mb-3">
+                  <h5>Encuéntranos</h5>
+                  <ul class="list-unstyled">
+                      <li><span class="fw-bold">Dirección:</span> Virrey del Pino 1581, C1426 C1426EFC, Cdad. Autónoma de Buenos Aires</li>
+                      <li><span class="fw-bold">Teléfono:</span> 112255898</li>
+                      <li><span class="fw-bold">Correo:</span> <a href="mailto:carito@yopmail.com" class="text-white text-decoration-none">carito@yopmail.com</a></li>
+                  </ul>
+              </div>
+              <!-- Columna 4: Redes Sociales -->
+              <div class="col-md-3 mb-3 text-center text-md-start">
+                  <h5>Conéctate con nosotros</h5>
+                  <ul class="list-unstyled d-flex justify-content-center justify-content-md-start gap-3">
+                      <li>
+                          <a href="https://web.whatsapp.com/" target="_blank" class="text-white fs-4">
+                              <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/caritocursosdecafe/" target="_blank" class="text-white fs-4">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="text-center mt-3">
+              <p class="mb-0">Todos los derechos reservados &copy; 2024</p>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../js/agregar_carrito.js"></script>
+</body>
+</html>
+  
